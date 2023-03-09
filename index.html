@@ -22,14 +22,22 @@
         text-align: center;
         position: absolute;
         bottom: 0;
+        left: 50%;
+        color: orange;
+
+        transform: translate(-50%, -50%);
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+        color: white;
       }
     </style>
   </head>
   <body>
     <header class="header">
+      <div class="overlayBG">
+        <span class="sr-only">add backgroun color when opening menu in mobile</span>
+      </div>
       <div class="container">
         <div class="header__wrapper">
           <a href="#" class="logo" alt="logo">
@@ -225,7 +233,9 @@
 
         <div class="update__container">
           <div class="footer__contact--us">
-            <input class="email__input" type="text" name="email" placeholder=" Updates in your inbox…" />
+            <input class="email__input" type="email" id="email" name="email" placeholder=" Updates in your inbox…" />
+            <!-- <span class="email__label">Enter Your EMAIL</span> -->
+            <span class="validation">Enter Valid Email</span>
             <a href="#" class="get-started-link footer__go--link">Go</a>
           </div>
           <p class="copywrite">Copyright 2020. All Rights Reserved</p>
